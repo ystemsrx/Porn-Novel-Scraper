@@ -60,6 +60,8 @@ This format can be used for further analysis or to train models on the retrieved
    ```
 4. The script will create JSON files containing the scraped novels, organized by category.
 
+**Note: Users in Mainland China may need to use a VPN to run this program properly.**
+
 ### Important Notes
 - Ensure the `names` list in `Get_Passage.py` is populated with accurate titles from `Get_Title.py`.
 - The script introduces a delay between requests to prevent overwhelming the target server.
