@@ -1,4 +1,4 @@
-[中文](README.zh.md)
+[中文](README.md)
 
 # Porn Novel Scraper
 
