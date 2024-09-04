@@ -2,6 +2,8 @@
 
 # Porn Novel Scraper
 
+**At the beginning**: Some of the scraped content using this code has been open-sourced on Hugging Face. [Click here](https://huggingface.co/datasets/ystemsrx/Erotic_Literature_Collection) to view.
+
 ## Description
 This repository contains two Python scripts, `Get_Title.py` and `Get_Passage.py`, designed to work together to scrape pornographic novels from a target website. The scripts extract titles and corresponding content from various categories of pornographic novels on the website.
 
