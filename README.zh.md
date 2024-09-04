@@ -2,6 +2,8 @@
 
 # 色情小说抓取器
 
+**写在开头**：使用此代码爬取的部分内容已经在Hugging Face上开源，[点击此处](https://huggingface.co/datasets/ystemsrx/Erotic_Literature_Collection)查看。
+
 ## 描述
 该仓库包含两个Python脚本：`Get_Title.py` 和 `Get_Passage.py`，它们协同工作以从目标网站抓取色情小说。脚本从网站上不同类别的色情小说中提取标题和相应内容。
 
