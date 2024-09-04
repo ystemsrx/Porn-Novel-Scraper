@@ -1,4 +1,4 @@
-[English](https://github.com/ystemsrx/Porn-Novel-Scraper)
+[English](README.en.md)
 
 # 色情小说抓取器
 
