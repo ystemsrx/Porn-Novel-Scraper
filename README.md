@@ -5,12 +5,13 @@
 **写在开头**：使用此代码爬取的部分内容已经在Hugging Face上开源，[点击此处](https://huggingface.co/datasets/ystemsrx/Erotic_Literature_Collection)查看。
 
 ## 描述
-该仓库包含两个Python脚本：`Get_Title.py` 和 `Get_Passage.py`，它们协同工作以从目标网站抓取色情小说。脚本从网站上不同类别的色情小说中提取标题和相应内容。
+该仓库包含5个Python脚本：包含1个`Get_Title.py` 和4个 `Get_Passage`，它们协同工作以从目标网站抓取色情小说。脚本从网站上不同类别的色情小说中提取标题和相应内容。
 
 ## Get_Title.py
 
 ### 描述
-`Get_Title.py` 用于抓取并提取指定网页上所有 `<a>` 标签的标题。这些标题将与 `Get_Passage.py` 一起使用，以过滤和获取目标网站上的特定内容。
+`Get_Title.py` 用于抓取并提取指定网页上所有 `<a>` 标签的标题。这些标题将与 `Get_Passage_CN.py` 一起使用，以过滤和获取目标网站上的特定内容（[中文成人文学网](https://www.xbookcn.net/)）。
+`Get_Passage_W1.py`以及另外两个文件则是用于从另一个网站及它的备用站点爬取内容（[风月成人网](http://www.h528.com/)）。
 
 ### 功能
 - **网页抓取**：从提供的URL获取HTML内容。
@@ -27,12 +28,13 @@
    ```bash
    python Get_Title.py
    ```
-4. 使用输出的标题来填充 `Get_Passage.py` 中的 `names` 列表。
+4. 使用输出的标题来填充 `Get_Passage_CN.py` 中的 `names` 列表。
 
 ## Get_Passage.py
 
 ### 描述
-`Get_Passage.py` 使用 `Get_Title.py` 提取的标题，从网站上抓取并获取相应的色情小说。它处理多个类别，并将清理后的内容保存到JSON文件中。抓取的色情小说涵盖了广泛的类型和主题。
+`Get_Passage_CN.py` 使用 `Get_Title.py` 提取的标题，从网站上抓取并获取相应的色情小说。它处理多个类别，并将清理后的内容保存到JSON文件中。抓取的色情小说涵盖了广泛的类型和主题。
+`Get_Passage_W.py`提取目标网站的小说类别，并爬取每种类别下的所有小说。且使用多线程能够同时对所有类别进行爬取。
 
 ### 功能
 - **并发抓取**：使用多线程同时抓取多个类别的内容。
@@ -55,7 +57,7 @@
    ```bash
    pip install requests beautifulsoup4 urllib3
    ```
-2. 用 `Get_Title.py` 提取的标题填充 `Get_Passage.py` 中的 `names` 列表。
+2. 用 `Get_Title.py` 提取的标题填充 `Get_Passage_CN.py` 中的 `names` 列表。
 3. 运行脚本以抓取并保存内容：
    ```bash
    python Get_Passage.py
@@ -65,7 +67,7 @@
 **注意：中国大陆用户可能需要使用VPN才能够正常运行此程序。**
 
 ### 重要提示
-- 确保 `Get_Passage.py` 中的 `names` 列表已用 `Get_Title.py` 提取的准确标题填充。
+- 确保 `Get_Passage_CN.py` 中的 `names` 列表已用 `Get_Title.py` 提取的准确标题填充。
 - 脚本在请求之间引入了延迟，以防止对目标服务器造成负担。
 
 ## 免责声明
