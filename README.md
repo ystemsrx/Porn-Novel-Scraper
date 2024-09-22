@@ -7,10 +7,11 @@
 ## 描述
 该仓库包含5个Python脚本：包含1个`Get_Title.py` 和4个 `Get_Passage`，它们协同工作以从目标网站抓取色情小说。脚本从网站上不同类别的色情小说中提取标题和相应内容。
 
-## Get_Title.py
+## 文件
 
 ### 描述
 `Get_Title.py` 用于抓取并提取指定网页上所有 `<a>` 标签的标题。这些标题将与 `Get_Passage_CN.py` 一起使用，以过滤和获取目标网站上的特定内容（[中文成人文学网](https://www.xbookcn.net/)）。
+
 `Get_Passage_W1.py`以及另外两个文件则是用于从另一个网站及它的备用站点爬取内容（[风月成人网](http://www.h528.com/)）。
 
 ### 功能
@@ -23,12 +24,11 @@
    ```bash
    pip install requests beautifulsoup4
    ```
-2. 修改 `url` 变量以指向目标网页。
-3. 运行脚本以生成标题列表：
+2. 运行脚本以生成标题列表：
    ```bash
    python Get_Title.py
    ```
-4. 使用输出的标题来填充 `Get_Passage_CN.py` 中的 `names` 列表。
+3. 使用输出的标题来填充 `Get_Passage_CN.py` 中的 `names` 列表。
 
 ## Get_Passage.py
 
