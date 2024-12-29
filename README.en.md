@@ -4,6 +4,8 @@
 
 **Preface**: Some of the content scraped using this code has been open-sourced on Hugging Face. [Click here](https://huggingface.co/datasets/ystemsrx/Erotic_Literature_Collection) to view it.
 
+**Want to see the video?**: Use my video scraping script [Porn Video Scraper](https://github.com/ystemsrx/Porn-Video-Scraper)
+
 ## Description
 
 This repository contains 5 Python scripts: one `Get_Title.py` and four `Get_Passage` scripts, which work together to scrape erotic novels from target websites. The scripts extract titles and corresponding content from different categories of erotic novels on the websites.
